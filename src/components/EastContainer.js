@@ -28,7 +28,8 @@ class EastContainer extends Component {
   render() {
     return (
       <div>
-        <h1> teams </h1>
+        <hr/>
+        <h4> Eastern Conference Standings </h4>
         <ResultList results={this.state.results} />
       </div>
     );
