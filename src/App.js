@@ -1,8 +1,9 @@
 import React from "react";
-import SearchResultContainer from "./components/SearchResultContainer";
+import EastContainer from "./components/EastContainer";
+import WestContainer from "./components/WestContainer";
 
 function App() {
-  return <SearchResultContainer />;
+  return <EastContainer />;
 }
 
 export default App;

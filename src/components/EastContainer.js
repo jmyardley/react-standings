@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ResultList from "./ResultList";
 import API from "../utils/API";
 
-class SearchResultContainer extends Component {
+class EastContainer extends Component {
   state = {
     results: []
   };
@@ -13,7 +13,7 @@ class SearchResultContainer extends Component {
 
 
   getStandings = () => {
-    API.getStandings()
+    API.getEastStandings()
       .then(res => {
         var standings = (res.data.api.standings);
         this.setState({ results: standings });
@@ -35,4 +35,4 @@ class SearchResultContainer extends Component {
   }
 }
 
-export default SearchResultContainer;
+export default EastContainer;
