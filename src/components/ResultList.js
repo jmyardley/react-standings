@@ -5,11 +5,11 @@ function ResultList(props) {
     <table className="table table-bordered table-sm">
       <tbody>
         <tr>
-          <th>image</th><th>first</th><th>last</th><th>email</th><th>age  <button>sort</button></th><th>gender  <button>filter</button></th>
+          <th>teamid</th><th>win</th><th>loss</th><th>gb</th><th>w%</th>
         </tr>
         {props.results.map(result => (
-          <tr key={result.id}>
-            <td><img src={result.picture.thumbnail} alt={result.name.first}></img></td><td>{result.name.first}</td><td>{result.name.last}</td><td>{result.email}</td><td>{result.dob.age}</td><td>{result.gender}</td>
+          <tr key={result.teamId}>
+            <td>{result.teamId}</td><td>{result.win}</td><td>{result.loss}</td><td>{result.gamesBehind}</td><td>{result.winPercentage}</td>
           </tr>
         ))}
       </tbody>
