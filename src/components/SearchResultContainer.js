@@ -8,18 +8,9 @@ class SearchResultContainer extends Component {
   };
 
   componentDidMount() {
-    this.searchUsers();
     this.getStandings();
   }
 
-  searchUsers = () => {
-    API.search()
-      .then(res => {
-        var users = (res.data.results);
-        console.log(users);
-      })
-      .catch(err => console.log(err));
-  };
 
   getStandings = () => {
     API.getStandings()
