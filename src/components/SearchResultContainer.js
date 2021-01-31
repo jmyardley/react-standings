@@ -9,6 +9,7 @@ class SearchResultContainer extends Component {
 
   componentDidMount() {
     this.searchUsers();
+    this.getStandings();
   }
 
   searchUsers = () => {
@@ -21,6 +22,15 @@ class SearchResultContainer extends Component {
       .catch(err => console.log(err));
   };
 
+  getStandings = () => {
+    API.getStandings()
+      .then(res => {
+        var standings = (res.data);
+        console.log(standings);
+      })
+      .catch(err => console.log(err));
+  };
+
   handleInputChange = event => {
     const name = event.target.name;
     const value = event.target.value;
@@ -29,7 +39,6 @@ class SearchResultContainer extends Component {
     });
   };
 
-  // When the form is submitted, search the Giphy API for `this.state.search`
   handleFormSubmit = event => {
     event.preventDefault();
     this.searchUsers();
