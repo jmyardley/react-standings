@@ -3,7 +3,7 @@ The title of this project is React Standings App.
 ![badge](https://img.shields.io/badge/License-MIT-brightgreen)
 
 Description: 
-App built in React to retrieve an array of teams and their records from the NBA API, sort them by conference and order them by winning percentage, and map through the array and render it to an Eastern and Western conference tab using props.
+App built in React to retrieve an array of teams and their records from the NBA API, sort them by conference and order them by winning percentage, and map through the array and render them to Eastern and Western conference tabs using props.
 
 Contents: [Installation](#Installation)|[Usage](#Usage)|[Contribution](#Contribution)|[Test](#Test)|[License](#License)|[Contact](#Contact) 
 
